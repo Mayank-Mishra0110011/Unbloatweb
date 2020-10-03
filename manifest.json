@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "No, I don't think I will",
+  "version": "1.0",
+  "description": "Remove that stupid login pop up while scrolling or selecting a post on instagram.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["__scroll__.js"]
+    }
+  ]
+}
