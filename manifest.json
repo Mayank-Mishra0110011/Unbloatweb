@@ -1,15 +1,19 @@
 {
   "manifest_version": 2,
-  "name": "No, I don't think I will",
-  "version": "1.0",
-  "description": "Remove that stupid login pop up while scrolling or selecting a post on instagram.",
+  "name": "Unbloatweb",
+  "version": "1.3",
+  "description": "Remove that stupid login pop up while scrolling or selecting a post on instagram.\nScroll into view for playlists greater than ~100 videos because the genius programmers at youtube are too smart to implement such trivial things.",
   "icons": {
     "48": "icon.png"
   },
   "content_scripts": [
     {
       "matches": ["*://*.instagram.com/*"],
-      "js": ["__scroll__.js"]
+      "js": ["scrollInsta.js"]
+    },
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["scrollYT.js"]
     }
   ]
 }

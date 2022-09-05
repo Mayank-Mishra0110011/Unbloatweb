@@ -1,5 +1,3 @@
-// https://extensionworkshop.com/documentation/publish/package-your-extension/
-
 window.onpageshow = () => {
   const __root__ = document.querySelector(".ySN3v");
 
